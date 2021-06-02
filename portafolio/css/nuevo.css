@@ -1,0 +1,54 @@
+body{
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+
+.caja{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    height: auto;
+}
+
+.caja__text{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    border: 1px solid #8e44ad;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill:transparent;
+}
+
+rect{
+    stroke: #8e44ad;
+    stroke-width: 4;
+    stroke-dasharray: 2000;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        stroke-dashoffset: 1600;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@media(min-width:100%){
+    .caja{
+        width: 82%;
+    }
+}
